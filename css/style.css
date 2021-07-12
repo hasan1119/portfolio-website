@@ -163,13 +163,15 @@ a {
     overflow: hidden;
     white-space: nowrap;
     animation-name: typing-text;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     max-width: 610px;
     border-right: 10px solid;
     line-height: 60px;
     transition: steps(18);
+    animation-fill-mode: both;
+
 }
 
 @keyframes typing-text {
@@ -177,8 +179,11 @@ a {
         width: 0ch;
     }
 
-    100% {
+    50% {
         width: 18ch;
+    }
+    100%{
+        width: 0ch;
     }
 }
 
