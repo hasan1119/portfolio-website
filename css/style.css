@@ -1,0 +1,149 @@
+/* Common Styles starts */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Common Styles ends */
+
+/* Home Section style starts */
+
+#home {
+    background: linear-gradient(#000000b8, #000000b8), url("../images/intro-bg.jpg");
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* header style */
+.header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 70px;
+}
+
+.logo {
+    width: 114px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav-menu {}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    color: #fafafae6;
+    line-height: 24px;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: color 0.5s ease-in-out;
+}
+
+.nav-menu ul li a:hover,
+.nav-social-links i:hover {
+    color: #20c997;
+}
+
+.nav-social-links {}
+
+.nav-social-links ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-social-links i {
+    margin: 0 10px;
+    font: 18px;
+    line-height: 24px;
+    color: #fafafae6;
+    transition: color 0.5s ease-in-out;
+}
+
+/* intro styles */
+.intro {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 50px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.heading-name {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 83px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 21px;
+    color: #dee3e4;
+    margin-bottom: 1.5rem;
+}
+
+.hire-me-btn {
+    color: #20c997;
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    border: 2px solid #20c997;
+    transition: all 0.5s ease;
+    margin-top: 0.5rem;
+    border-radius: 50rem;
+}
+
+.hire-me-btn:hover {
+    color: #dee3e4;
+    background: #20c997;
+
+}
+
+/* Home Section style ends */
