@@ -594,7 +594,7 @@ a {
 }
 
 .overlay {
-    background: linear-gradient(rgb(0 0 0 / 1%), rgba(0, 0, 0, 1));
+    background: linear-gradient(#0000000d,#000000d9,black);
     position: absolute;
     bottom: -50%;
     left: 0;
@@ -645,6 +645,7 @@ a {
 
 
 .project-info p {
+    color: #20c997;
     color: #fff;
     font-size: 13px;
     font-weight: 400;
