@@ -649,6 +649,7 @@ a {
 }
 
 .project-info {
+    opacity: 0;
     z-index: 10;
     position: absolute;
     bottom: -65%;
@@ -656,7 +657,7 @@ a {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-    transition: bottom .2s ease-in-out;
+    transition: all .2s ease-in;
 }
 
 .project-info h4 {
@@ -710,6 +711,7 @@ a {
 
 .project:hover .project-info {
     bottom: 10%;
+    opacity: 1;
 }
 
 .project:hover .overlay {
