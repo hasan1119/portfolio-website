@@ -8,6 +8,8 @@
     <title>Personal Portfolio Website</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <!-- font awesome cdn -->
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- google fonts cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +35,6 @@
                     <li><a href="#service">what i do</a></li>
                     <li><a href="#resume">resume</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#client">client</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
@@ -48,11 +49,16 @@
 
             </div>
         </header>
-        <div class="intro">
-            <p class="welcome">Welcome</p>
-            <h2 class="heading-name">I'm Rokibul Hasan.</h2>
-            <p class="title">A Professional Web Application Developer.</p>
-            <a class="hire-me-btn" href="">Hire Me</a>
+        <div class="container">
+            <div class="intro">
+                <p class="welcome">Welcome</p>
+                <h2 class="heading-name">I'm Rokibul Hasan.</h2>
+                <p class="title">A Professional Web Application Developer.</p>
+                <a class="hire-me-btn" href="">Hire Me</a>
+                <div class="scroll-down">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Home section Ends -->
@@ -310,7 +316,7 @@
 
                 </div>
                 <div class="downloadCV-btn">
-                    <a  href="">Download CV <i class="fas fa-download"></i></a>
+                    <a href="">Download CV <i class="fas fa-download"></i></a>
                 </div>
             </div>
 
@@ -331,7 +337,7 @@
             <div class="project-container">
                 <div class="project">
                     <div class="project-image">
-                        <img src="./images/projects/project1.jpg" alt="Project Image">    
+                        <img src="./images/projects/project1.jpg" alt="Project Image">
                     </div>
                     <div class="project-info">
                         <p>Category</p>
@@ -341,11 +347,11 @@
                     </div>
                     <div class="overlay"></div>
                 </div>
-          
-         
+
+
                 <div class="project">
                     <div class="project-image">
-                        <img src="./images/projects/project2.jpg" alt="Project Image">    
+                        <img src="./images/projects/project2.jpg" alt="Project Image">
                     </div>
                     <div class="project-info">
                         <p>Category</p>
@@ -358,7 +364,7 @@
 
                 <div class="project">
                     <div class="project-image">
-                        <img src="./images/projects/project3.jpg" alt="Project Image">    
+                        <img src="./images/projects/project3.jpg" alt="Project Image">
                     </div>
                     <div class="project-info">
                         <p>Category</p>
@@ -371,7 +377,7 @@
 
                 <div class="project">
                     <div class="project-image">
-                        <img src="./images/projects/project4.jpg" alt="Project Image">    
+                        <img src="./images/projects/project4.jpg" alt="Project Image">
                     </div>
                     <div class="project-info">
                         <p>Category</p>
@@ -384,7 +390,7 @@
 
                 <div class="project">
                     <div class="project-image">
-                        <img src="./images/projects/project5.jpg" alt="Project Image">    
+                        <img src="./images/projects/project5.jpg" alt="Project Image">
                     </div>
                     <div class="project-info">
                         <p>Category</p>
@@ -397,7 +403,7 @@
 
                 <div class="project">
                     <div class="project-image">
-                        <img src="./images/projects/project6.png" alt="Project Image">    
+                        <img src="./images/projects/project6.png" alt="Project Image">
                     </div>
                     <div class="project-info">
                         <p>Category</p>
@@ -411,6 +417,70 @@
         </div>
     </section>
     <!-- Portfolio section ends -->
+
+    <!-- contact section starts -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>CONTACT
+                </h2>
+                <p>Get in Touch</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-information">
+                    <h2>ADDRESS</h2>
+                    <p class="address">4th Floor, Plot No.22,
+                        145 Murphy Canyon Rd.
+                        San Diego CA 2028</p>
+                    <p><i class="fas fa-phone"></i> (060) 444 434 444</p>
+                    <p><i class="fas fa-fax"></i> (060) 555 545 555</p>
+                    <p><i class="fas fa-envelope"></i> chat@simone.com</p>
+                    <h2 class="follow">FOLLOW ME</h2>
+                    <ul class="social-links">
+                        <li><a href=""><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-google"></i></a></li>
+                        <li><a href=""><i class="fab fa-github"></i></a></li>
+                    </ul>
+
+                </div>
+                <div class="contact-form">
+                    <h2>send us a note</h2>
+                    <div class="form">
+                        <form action="#">
+                            <div class="name-email">
+                                <input required type="text" name="Name" placeholder="Name">
+                                <input required type="email" name="Email" placeholder="Email">
+                            </div>
+                            <textarea class="message" rows="10" name="Message"
+                                placeholder="Tell us more about your needs......"></textarea>
+
+                            <div class="button-container">
+                                <button class="submit" type="submit">Send</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="google-map">
+                    <h2>Location</h2>
+                    <iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=benipur,%20niamatpur&t=k&z=17&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+    <footer>
+        <p>Copyright &copy; All Reserved | <a href=""> Md. Rokibul Hasan</a></p>
+    </footer>
+    <!-- footer section ends -->
 
 </body>
 
