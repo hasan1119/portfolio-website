@@ -46,6 +46,7 @@ a {
     background-repeat: no-repeat;
     margin-top: 0;
     padding-top: 0;
+    
 }
 
 /* header style */
@@ -60,6 +61,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .logo {
